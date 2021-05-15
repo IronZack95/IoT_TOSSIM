@@ -1,0 +1,85 @@
+********************************************
+*                                          *
+*        TOSSIM Script   Z a c k           *
+*            1 0 5 0 4 1 5 1               *
+********************************************
+Initializing mac....
+Initializing radio channels....
+    using topology file: topology.txt
+    using noise file: meyer-heavy.txt
+Initializing simulator....
+Activate debug message on channel init
+Activate debug message on channel boot
+Activate debug message on channel timer
+Activate debug message on channel led_0
+Activate debug message on channel led_1
+Activate debug message on channel led_2
+Activate debug message on channel radio
+Activate debug message on channel radio_send
+Activate debug message on channel radio_rec
+Activate debug message on channel radio_pack
+Creating node 1...
+>>>Will boot at time 0 [sec]
+Creating node 2...
+>>>Will boot at time 5 [sec]
+Creating radio channels...
+>>>Setting radio channel from node  1  to node  2  with gain  -60.0  dBm
+>>>Setting radio channel from node  2  to node  1  with gain  -60.0  dBm
+Initializing Closest Pattern Matching (CPM)...
+Reading noise model data file: meyer-heavy.txt
+Loading:##Done!
+>>>Creating noise model for node: 1
+>>>Creating noise model for node: 2
+Start simulation with TOSSIM!
+
+
+
+DEBUG (1): Application booted.
+DEBUG (1): Radio on on node 1!
+DEBUG (1): Timer fired, counter is 1.
+DEBUG (1): Impose ack on REQ
+DEBUG (1): Sending REQ packet at time 0:0:0.976562510
+DEBUG (1): Packet sent... at time 0:0:0.978378295 with NOT ACKED!
+DEBUG (1): Timer fired, counter is 2.
+DEBUG (1): Impose ack on REQ
+DEBUG (1): Sending REQ packet at time 0:0:1.953125010
+DEBUG (1): Packet sent... at time 0:0:1.956558217 with NOT ACKED!
+DEBUG (1): Timer fired, counter is 3.
+DEBUG (1): Impose ack on REQ
+DEBUG (1): Sending REQ packet at time 0:0:2.929687510
+DEBUG (1): Packet sent... at time 0:0:2.938293416 with NOT ACKED!
+DEBUG (1): Timer fired, counter is 4.
+DEBUG (1): Impose ack on REQ
+DEBUG (1): Sending REQ packet at time 0:0:3.906250010
+DEBUG (1): Packet sent... at time 0:0:3.909744252 with NOT ACKED!
+DEBUG (1): Timer fired, counter is 5.
+DEBUG (1): Impose ack on REQ
+DEBUG (1): Sending REQ packet at time 0:0:4.882812510
+DEBUG (1): Packet sent... at time 0:0:4.886398304 with NOT ACKED!
+DEBUG (2): Application booted.
+DEBUG (2): Radio on on node 2!
+DEBUG (1): Timer fired, counter is 6.
+DEBUG (1): Impose ack on REQ
+DEBUG (1): Sending REQ packet at time 0:0:5.859375010
+DEBUG (2): Received packet at time 0:0:5.863204943
+DEBUG (2): >>>Pack
+ 	 Payload length 3
+		 Payload
+		 msg_type: 1
+		 msg_counter: 6
+DEBUG (2): Impose ack on RESP
+DEBUG (2): Sending RESP packet at time 0:0:5.863204943
+DEBUG (1): Packet sent... at time 0:0:5.863372789 with ACKED!
+DEBUG (1): Received packet at time 0:0:5.868179279
+DEBUG (1): >>>Pack
+ 	 Payload length 5
+		 Payload
+		 msg_type: 2
+		 msg_counter: 6
+		 msg_data: 103
+DEBUG (1): Timer 1 STOP, END SIMULATION!
+DEBUG (2): Packet sent... at time 0:0:5.868347125 with ACKED!
+
+
+
+Simulation finished!
